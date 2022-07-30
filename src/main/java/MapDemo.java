@@ -101,8 +101,7 @@ public class MapDemo {
             map.put(i, i);
         }
         /**
-         * Below code is doing read and write together
-         * Example where concurrent modification exception.
+         * Below code is doing read and write together without issue.
          */
         for (int i = 0;i<1000;i++){
             Iterator<Map.Entry<Integer, Integer>> entryIterator = map.entrySet().iterator();
